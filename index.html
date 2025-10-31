@@ -1,19 +1,32 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James Adams Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <meta name="description"
+        content="James Adams is a freelance web developer and designer with 10+ years of experience. Specialized in UI/UX design, web programming, and mobile app development.">
+    <meta name="keywords"
+        content="James Adams, Freelance Developer, Web Designer, UI UX, Front End, Mobile App Developer, Portfolio">
+    <meta name="author" content="James Adams">
 </head>
 
 <body>
-    <div class="container"><!-- ===== HEADER ===== -->
+    <div class="container">
+        <!--  HEADER SECTION  -->
+        <!--
+            Header section me logo, navigation links, 
+            aur social media icons hotay hain.
+        -->
         <header>
             <div class="logo">Adams</div>
+
+            <!--  Navigation Bar -->
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -22,28 +35,42 @@
                     <li><a href="#">About</a></li>
                 </ul>
             </nav>
+
+            <!--  Social Media Links -->
             <div class="social-icons">
                 <a href="#">LinkedIn</a>
                 <a href="#">Instagram</a>
             </div>
         </header>
 
-        <!-- ===== HERO SECTION ===== -->
+        <!--  HERO SECTION  -->
+        <!--
+            Hero section me introduction aur main image hoti hai.
+            Yeh section user ko pehle impression deta hai.
+        -->
         <section class="hero">
-           <div class="right_margin"><div class="hero-left">
-                <h2>I’m</h2>
-                <h1>James Adams</h1>
-                <p>A freelancer who provides services for digital programming and design content needs,
-                    for all businesses with more than 10 years of experience.</p>
-            </div></div> 
+            <div class="right_margin">
+                <div class="hero-left">
+                    <!--  Introduction Text -->
+                    <h2>I’m</h2>
+                    <h1>James Adams</h1>
+                    <p>A freelancer who provides services for digital programming and design content needs,
+                        for all businesses with more than 10 years of experience.</p>
+                </div>
+            </div>
+
+            <!--  Center Image -->
             <div class="center-image">
                 <img src="./photo/phpcU0vFd-removebg-preview (1).png" alt="James Adams" />
             </div>
 
+            <!--  Services Overview -->
             <div class="hero-right">
                 <h3>Services</h3>
                 <p>Let's build quality products in programming and design with my services</p>
                 <a href="#">Show more →</a>
+
+                <!--  Additional Social Links -->
                 <div class="hero-socials">
                     <a href="#">Facebook</a>
                     <a href="#">Twitter</a>
@@ -51,16 +78,19 @@
                     <a href="#">Pinterest</a>
                 </div>
             </div>
-
-
         </section>
 
-        <!-- ===== TRUSTED COMPANIES ===== -->
+        <!--  TRUSTED BY SECTION  -->
+        <!--
+            Yeh section un brands ya companies ko show karta hai 
+            jin par client ne trust kiya hai. It builds credibility.
+        -->
         <section class="trusted-by">
             <h2>Trusted by</h2>
 
             <div class="brand-section">
                 <div class="brand-logos">
+                    <!--  Company Logos -->
                     <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
                         alt="Meta Logo">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
@@ -70,18 +100,21 @@
                     <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="Slack Logo">
                 </div>
             </div>
-
-
-
         </section>
 
-        <!-- ===== WHAT I CAN DO ===== -->
+        <!-- ================= SERVICES SUMMARY SECTION ================= -->
+        <!--
+            Yeh section bataata hai ke freelancer kya services deta hai 
+            aur uska experience, completed projects, etc.
+        -->
         <section class="services-summary">
+            <!--  Left Side: Text and Stats -->
             <div class="left">
                 <h2>What Can I Do For Your Needs</h2>
                 <p>It is easier to entrust the work to the experts because they are able to provide
                     the best results with reliable quality.</p>
 
+                <!--  Statistics Section -->
                 <div class="stats">
                     <div>
                         <h3>250+</h3>
@@ -102,18 +135,27 @@
                 </div>
             </div>
 
+            <!--  Right Side: Service List -->
             <div class="right">
                 <div class="service-list">
-                    <div class="service-item"><img src="./photo/OIP.jpeg" id="photo_1">UI/UX Design - 117 Projects</div>
-                    <div class="service-item"><img src="./photo/OIP2.jpeg" id="photo_2" >Front End Develop - 84 Projects</div>
-                    <div class="service-item"><img src="./photo/OIP3.jpeg" id="photo_3">Mobile App Develop - 32 Projects</div>
+                    <div class="service-item">
+                        <img src="./photo/OIP.jpeg" id="photo_1">UI/UX Design - 117 Projects
+                    </div>
+                    <div class="service-item">
+                        <img src="./photo/OIP2.jpeg" id="photo_2">Front End Develop - 84 Projects
+                    </div>
+                    <div class="service-item">
+                        <img src="./photo/OIP3.jpeg" id="photo_3">Mobile App Develop - 32 Projects
+                    </div>
                 </div>
             </div>
         </section>
 
-
-
-        <!-- ===== SERVICE BOXES ===== -->
+        <!--  MAIN SERVICES BOXES  -->
+        <!--
+            Yeh section har core service ka short explanation deta hai,
+            jaise UI/UX, Web Programming, aur Mobile Development.
+        -->
         <section class="main-services">
             <div class="box">
                 <h3>UI/UX Design</h3>
@@ -132,6 +174,13 @@
         </section>
     </div>
 
+    <!-- ================= INFO ABOUT USED TAGS ================= -->
+    <!--
+         INFO:
+        1 <header>, <section>, <div>, <nav>, <img>, <a>, <h1>-<h3>, <p> tags use hue hain.  
+        2 <header> navigation ke liye, <section> alag-alag parts divide karne ke liye, <div> layout aur grouping ke liye.  
+        3 <img> images ke liye, <a> hyperlinks ke liye, aur <p>/<h1>-<h3> text headings aur paragraphs ke liye use hua hai.
+    -->
 </body>
 
 </html>
