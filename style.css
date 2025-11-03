@@ -365,9 +365,9 @@ nav a:hover::after {
   border-radius: 15px;
 }
 
-/* ===== MEDIA QUERIES ===== */
+/* ===== 🌐 MEDIA QUERIES ===== */
 
-/* 🖥️ Large screens (max-width: 1200px) */
+/* 🖥️ Large Screens (max-width: 1200px) */
 @media (max-width: 1200px) {
   .container {
     width: 95%;
@@ -387,26 +387,24 @@ nav a:hover::after {
   }
 
   .center-image {
-    margin: 60px 0;
+    margin: 50px 0;
   }
 
   nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
   }
 
-  .services-summary {
+  .services-summary,
+  .main-services {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .main-services {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .box {
-    width: 80%;
+    width: 85%;
   }
 }
 
@@ -414,24 +412,28 @@ nav a:hover::after {
 @media (max-width: 768px) {
   header {
     flex-direction: column;
+    align-items: center;
     gap: 15px;
   }
 
   nav ul {
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 12px;
   }
 
   .hero-left h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .hero-left p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .brand-logos {
     width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
   }
 
@@ -444,18 +446,19 @@ nav a:hover::after {
   }
 
   .center-image img {
-    transform: scale(2.5);
+    width: 90%;
+    transform: scale(1.6);
   }
 }
 
-/*  Small Phones (max-width: 480px) */
+/* 📱 Small Phones (max-width: 480px) */
 @media (max-width: 480px) {
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .hero-left h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .hero-left p {
@@ -464,41 +467,13 @@ nav a:hover::after {
 
   .service-item {
     flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .center-image img {
-    transform: scale(1.8);
-  }
-}
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 40px 0;
-  }
-
-  .center-image {
-    margin: 30px 0;
-    margin-right: 0;
   }
 
   .center-image img {
-    transform: scale(1.5); /* pehle 3.5 tha */
-    width: 150px;
-  }
-
-  .hero-left h1 {
-    font-size: 2rem;
-  }
-
-  .hero-left p {
-    font-size: 0.9rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
+    width: 100%;
+    transform: scale(1.3);
   }
 }
 
