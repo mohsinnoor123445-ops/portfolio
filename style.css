@@ -448,7 +448,7 @@ nav a:hover::after {
   }
 }
 
-/* 📱 Small Phones (max-width: 480px) */
+/*  Small Phones (max-width: 480px) */
 @media (max-width: 480px) {
   .logo {
     font-size: 1.5rem;
@@ -471,3 +471,34 @@ nav a:hover::after {
     transform: scale(1.8);
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .center-image {
+    margin: 30px 0;
+    margin-right: 0;
+  }
+
+  .center-image img {
+    transform: scale(1.5); /* pehle 3.5 tha */
+    width: 150px;
+  }
+
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+
+  .hero-left p {
+    font-size: 0.9rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
