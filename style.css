@@ -361,43 +361,92 @@ nav a:hover::after {
   border-radius: 15px;
 }
 
-/* ===== MEDIA QUERIES ===== */
+/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
   .container {
-    width: 100%;
-    padding: 0 30px;
+    width: 95%;
   }
+
   .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-  .center-image {
-    margin: 50px 0;
-    transform: scale(1);
-  }
-  .main-services {
-    flex-direction: column;
+    flex-direction: row; /* keep image side-by-side */
     align-items: center;
+    gap: 30px;
   }
-  .box {
-    width: 80%;
+
+  .center-image {
+    margin-right: 40px;
+    margin-top: 50px;
+    transform: scale(2.2);
+  }
+
+  .center-image img {
+    width: 150px;
+  }
+
+  .hero-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-left p {
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    gap: 15px;
-  }
-  nav ul {
+  .hero {
+    flex-direction: row; /* keep image side-by-side */
     gap: 20px;
+    padding: 50px 0;
   }
-  .services-summary {
-    flex-direction: column;
-    text-align: center;
+
+  .hero-left {
+    flex: 1;
   }
-  .brand-logos {
-    flex-wrap: wrap;
-    gap: 20px;
+
+  .center-image {
+    margin-top: 30px;
+    margin-right: 20px;
+    transform: scale(1.6); /* smaller image */
+  }
+
+  .center-image img {
+    width: 120px;
+  }
+
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+
+  .hero-left p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: row; /* still side-by-side */
+    gap: 10px;
+  }
+
+  .hero-left {
+    flex: 1;
+  }
+
+  .center-image {
+    margin-right: 10px;
+    margin-top: 10px;
+    transform: scale(1.2);
+  }
+
+  .center-image img {
+    width: 90px;
+  }
+
+  .hero-left h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-left p {
+    font-size: 0.8rem;
   }
 }
