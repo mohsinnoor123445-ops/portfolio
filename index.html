@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
+    <!--  HEAD SECTION
+         - Title, meta tags aur external CSS files yahan link ki gayi hain
+         - Font Awesome icons ke liye external link use hua hai
+         - SEO ke liye description, keywords aur author tags diye gaye hain
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James Adams Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <meta name="description"
-        content="James Adams is a freelance web developer and designer with 10+ years of experience. Specialized in UI/UX design, web programming, and mobile app development.">
-    <meta name="keywords"
-        content="James Adams, Freelance Developer, Web Designer, UI UX, Front End, Mobile App Developer, Portfolio">
+    <meta name="description" content="James Adams is a freelance web developer and designer with 10+ years of experience. Specialized in UI/UX design, web programming, and mobile app development.">
+    <meta name="keywords" content="James Adams, Freelance Developer, Web Designer, UI UX, Front End, Mobile App Developer, Portfolio">
     <meta name="author" content="James Adams">
 </head>
 
 <body>
     <div class="container">
-        <!--  HEADER SECTION  -->
-        <!--
-            Header section me logo, navigation links, 
-            aur social media icons hotay hain.
+
+        <!--  HEADER SECTION
+             - Isme logo, navigation bar aur social media icons hain
+             - <nav> tag use hua hai menu items ke liye
+             - <ul> aur <li> tags se list banayi gayi hai
         -->
         <header>
             <div class="logo">Adams</div>
 
-            <!--  Navigation Bar -->
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -36,22 +37,21 @@
                 </ul>
             </nav>
 
-            <!--  Social Media Links -->
             <div class="social-icons">
-                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"alt="LinkedIn">
-                <img class="icon2" src="https://cdn-icons-png.flaticon.com/512/174/174855.png"alt="Instagram">
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                <img class="icon2" src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
             </div>
         </header>
 
-        <!--  HERO SECTION  -->
-        <!--
-            Hero section me introduction aur main image hoti hai.
-            Yeh section user ko pehle impression deta hai.
+        <!--  HERO SECTION
+             - Developer ka introduction, image aur services ka short detail diya gaya hai
+             - Left: Text introduction
+             - Center: Developer ki image
+             - Right: Services aur social icons
         -->
         <section class="hero">
             <div class="right_margin">
                 <div class="hero-left">
-                    <!--  Introduction Text -->
                     <h2>I’m</h2>
                     <h1>James Adams</h1>
                     <p>A freelancer who provides services for digital programming and design content needs,
@@ -59,18 +59,14 @@
                 </div>
             </div>
 
-            <!--  Center Image -->
             <div class="center-image">
                 <img src="./photo/phpcU0vFd-removebg-preview (1).png" alt="James Adams" />
             </div>
 
-            <!--  Services Overview -->
             <div class="hero-right">
                 <h3>Services</h3>
                 <p>Let's build quality products in programming and design with my services</p>
                 <a href="#">Show more →</a>
-
-                <!--  Additional Social Links -->
                 <div class="hero-socials">
                     <img class="logo1" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
                     <img class="logo2" src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
@@ -80,42 +76,33 @@
             </div>
         </section>
 
-        <!--  TRUSTED BY SECTION  -->
-        <!--
-            Yeh section un brands ya companies ko show karta hai 
-            jin par client ne trust kiya hai. It builds credibility.
+        <!--  TRUSTED BY SECTION
+             - Un brands ke logos show kiye gaye hain jinke sath developer ne kaam kiya hai
+             - <img> tags use hue hain company logos ke liye
         -->
         <section class="trusted-by">
             <h2>Trusted by</h2>
-
             <div class="brand-section">
                 <div class="brand-logos">
-                    <!--  Company Logos -->
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
-                        alt="Meta Logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
-                        alt="Google Logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-                        alt="LinkedIn Logo">
-                    <img src="https://e7.pngegg.com/pngimages/708/311/png-clipart-twitter-twitter-thumbnail.png"
-                        alt="Twitter Logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Meta Logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo">
+                    <img src="https://e7.pngegg.com/pngimages/708/311/png-clipart-twitter-twitter-thumbnail.png" alt="Twitter Logo">
                 </div>
             </div>
         </section>
 
-        <!-- ================= SERVICES SUMMARY SECTION ================= -->
-        <!--
-            Yeh section bataata hai ke freelancer kya services deta hai 
-            aur uska experience, completed projects, etc.
+        <!--  SERVICES SUMMARY SECTION
+             - Developer ke experience aur services ka short overview diya gaya hai
+             - Left: Text aur stats
+             - Right: Services list with images
         -->
         <section class="services-summary">
-            <!--  Left Side: Text and Stats -->
             <div class="left">
                 <h2>What Can I Do For Your Needs</h2>
                 <p>It is easier to entrust the work to the experts because they are able to provide
                     the best results with reliable quality.</p>
 
-                <!--  Statistics Section -->
                 <div class="stats">
                     <div>
                         <h3>250+</h3>
@@ -136,29 +123,24 @@
                 </div>
             </div>
 
-            <!--  Right Side: Service List -->
             <div class="right">
                 <div class="service-list">
                     <div class="service-item">
-                        <img src="./photo/OIP.jpeg"
-                            id="photo_1">UI/UX Design - 117 Projects
+                        <img src="./photo/OIP.jpeg" id="photo_1">UI/UX Design - 117 Projects
                     </div>
                     <div class="service-item">
-                        <img src="./photo/OIP2.jpeg"
-                            id="photo_2">Front End Develop - 84 Projects
+                        <img src="./photo/OIP2.jpeg" id="photo_2">Front End Develop - 84 Projects
                     </div>
                     <div class="service-item">
-                        <img src="./photo/OIP3.jpeg"
-                            id="photo_3">Mobile App Develop - 32 Projects
+                        <img src="./photo/OIP3.jpeg" id="photo_3">Mobile App Develop - 32 Projects
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--  MAIN SERVICES BOXES  -->
-        <!--
-            Yeh section har core service ka short explanation deta hai,
-            jaise UI/UX, Web Programming, aur Mobile Development.
+        <!--  MAIN SERVICES SECTION
+             - 3 core services ka short explanation diya gaya hai
+             - Har box me <h3> aur <p> tag use hua hai
         -->
         <section class="main-services">
             <div class="box">
@@ -176,15 +158,14 @@
                 <p>Create an app from your own business for a more professional business performance.</p>
             </div>
         </section>
-    </div>
 
-    <!-- ================= INFO ABOUT USED TAGS ================= -->
-    <!--
-         INFO:
-        1 <header>, <section>, <div>, <nav>, <img>, <a>, <h1>-<h3>, <p> tags use hue hain.  
-        2 <header> navigation ke liye, <section> alag-alag parts divide karne ke liye, <div> layout aur grouping ke liye.  
-        3 <img> images ke liye, <a> hyperlinks ke liye, aur <p>/<h1>-<h3> text headings aur paragraphs ke liye use hua hai.
-    -->
+        <!--  TAGS USED SUMMARY
+             - <header>, <section>, <div>, <nav>, <img>, <a>, <h1>-<h3>, <p> tags use hue hain
+             - <header> navigation ke liye
+             - <section> different page parts ke liye
+             - <div> layout aur grouping ke liye
+        -->
+    </div>
 </body>
 
 </html>
