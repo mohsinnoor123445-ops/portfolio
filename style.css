@@ -236,6 +236,7 @@ nav a:hover::after {
   justify-content: space-evenly;
   align-items: center;
   width: 70%;
+  flex-wrap: wrap;
 }
 .brand-logos img {
   width: 60px;
@@ -253,6 +254,7 @@ nav a:hover::after {
   justify-content: space-between;
   gap: 80px;
   padding: 100px 0;
+  flex-wrap: wrap;
 }
 .services-summary .left {
   flex: 1;
@@ -317,6 +319,7 @@ nav a:hover::after {
   justify-content: center;
   gap: 30px;
   padding: 80px 0;
+  flex-wrap: wrap;
 }
 .box {
   background-color: var(--card-bg);
@@ -324,6 +327,7 @@ nav a:hover::after {
   border-radius: 15px;
   width: 30%;
   transition: 0.3s;
+  min-width: 280px;
 }
 .box h3 {
   color: var(--accent-color);
@@ -361,59 +365,93 @@ nav a:hover::after {
   border-radius: 15px;
 }
 
-/* ===== RESPONSIVE DESIGN (FIXED) ===== */
-@media (max-width: 1024px) {
+/* ===== MEDIA QUERIES ===== */
+
+/* 🖥️ Large screens (max-width: 1200px) */
+@media (max-width: 1200px) {
   .container {
     width: 95%;
   }
-
-  .hero {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-  }
-
-  .center-image {
-    margin-top: 100px;
-    margin-right: 40px;
-    transform: scale(2.5);
-  }
-
-  .center-image img {
-    width: 160px;
-  }
-
-  .hero-left h1 {
-    font-size: 2.6rem;
-  }
 }
 
-/* ===== TABLET ===== */
-@media (max-width: 768px) {
+/* 💻 Tablets (max-width: 992px) */
+@media (max-width: 992px) {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 50px 0;
+    padding: 60px 0;
   }
 
   .hero-left {
-    order: 1;
-    margin-bottom: 20px;
+    padding-right: 0;
   }
 
-  /* 🟢 Fixed Center Image Position */
   .center-image {
-    order: 2;
-    margin-top: 40px;
-    margin-right: 0;
-    transform: scale(1.4);
-    position: relative;
-    z-index: 1;
+    margin: 60px 0;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .services-summary {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 80%;
+  }
+}
+
+/* 📱 Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-left p {
+    font-size: 0.9rem;
+  }
+
+  .brand-logos {
+    width: 90%;
+    gap: 20px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .box {
+    width: 100%;
   }
 
   .center-image img {
-    width: 130px;
+    transform: scale(2.5);
+  }
+}
+
+/* 📱 Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.5rem;
   }
 
   .hero-left h1 {
@@ -421,41 +459,15 @@ nav a:hover::after {
   }
 
   .hero-left p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
-}
 
-/* ===== MOBILE ===== */
-@media (max-width: 480px) {
-  .hero {
+  .service-item {
     flex-direction: column;
-    text-align: center;
-    padding: 40px 0;
-  }
-
-  .hero-left {
-    order: 1;
-  }
-
-  /* 🟢 Image stays below logo, centered */
-  .center-image {
-    order: 2;
-    margin-top: 25px;
-    margin-right: 0;
-    transform: scale(1.1);
-    position: relative;
-    z-index: 1;
+    align-items: flex-start;
   }
 
   .center-image img {
-    width: 100px;
-  }
-
-  .hero-left h1 {
-    font-size: 1.7rem;
-  }
-
-  .hero-left p {
-    font-size: 0.85rem;
+    transform: scale(1.8);
   }
 }
